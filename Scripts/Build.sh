@@ -5,7 +5,7 @@ set -e
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 PROJECT_ROOT=$(realpath "$SCRIPT_DIR/..")
 cd $PROJECT_ROOT
-PROJECT_NAME=$(find . -name "*.uproject" -exec basename {} .uproject \;)
+PROJECT_NAME=$(find . -maxdepth 1 -name "*.uproject" -exec basename {} .uproject \;)
 
 # Check for UNREAL_ENGINE_PATH
 if [ -z ${UNREAL_ENGINE_PATH+x} ]; then

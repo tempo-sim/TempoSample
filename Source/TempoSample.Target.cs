@@ -11,5 +11,18 @@ public class TempoSampleTarget : TargetRules
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_4;
 		ExtraModuleNames.Add("TempoSample");
+
+                if (Platform == UnrealTargetPlatform.Win64)
+                {
+                        ToolChainName = "TempoVCToolChain";
+                }
+                else if (Platform == UnrealTargetPlatform.Mac)
+                {
+                        ToolChainName = "TempoMacToolChain";
+                }
+                else if (Platform == UnrealTargetPlatform.Linux)
+                {
+                        ToolChainName = "TempoLinuxToolChain";
+                }
 	}
 }

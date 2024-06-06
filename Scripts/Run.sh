@@ -31,7 +31,7 @@ if [ "$PLATFORM" = "Win64" ]; then
 elif [ "$PLATFORM" = "Mac" ]; then
   ./Engine/Binaries/Mac/UnrealEditor.app/Contents/MacOS/UnrealEditor "$PROJECT_ROOT/$PROJECT_NAME.uproject"
 elif [ "$PLATFORM" = "Linux" ]; then
-  ./Engine/Binaries/Linux/UnrealEditor "$PROJECT_ROOT/PROJECT_NAME.uproject"
+  ./Engine/Binaries/Linux/UnrealEditor "$PROJECT_ROOT/$PROJECT_NAME.uproject"
 else
   echo "Unsupported platform"
   exit 1

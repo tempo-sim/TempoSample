@@ -8,8 +8,8 @@ public class TempoSampleEditorTarget : TargetRules
 	public TempoSampleEditorTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
-		DefaultBuildSettings = BuildSettingsVersion.V4;
-		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_3;
+		DefaultBuildSettings = BuildSettingsVersion.V5;
+		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_4;
 		ExtraModuleNames.Add("TempoSample");
 
                 if (Platform == UnrealTargetPlatform.Win64)

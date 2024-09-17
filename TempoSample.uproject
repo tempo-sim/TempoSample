@@ -17,6 +17,14 @@
 			"TargetAllowList": [
 				"Editor"
 			]
-		}
+		},
+                {
+                        "Name": "TempoROS",
+                        "Enabled": false,
+                },
+                {
+                        "Name": "TempoROSBridge",
+                        "Enabled": false,
+                }
 	]
 }

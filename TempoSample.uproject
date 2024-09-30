@@ -20,11 +20,11 @@
 		},
                 {
                         "Name": "TempoROS",
-                        "Enabled": false,
+                        "Enabled": false
                 },
                 {
                         "Name": "TempoROSBridge",
-                        "Enabled": false,
+                        "Enabled": false
                 }
 	]
 }

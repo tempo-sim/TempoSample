@@ -1,3 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright Tempo Simulation, LLC. All Rights Reserved.
 
-#include "TempoSample/Public/TempoSampleGameMode.h"
+#include "TempoSampleGameMode.h"

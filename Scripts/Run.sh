@@ -27,13 +27,13 @@ fi
 
 cd "$UNREAL_ENGINE_PATH"
 if [ "$PLATFORM" = "Win64" ]; then
-  ./Engine/Binaries/Win64/UnrealEditor-Cmd.exe "$PROJECT_ROOT/$PROJECT_NAME.uproject"
+  ./Engine/Binaries/Win64/UnrealEditor-Cmd.exe "$PROJECT_ROOT/$PROJECT_NAME.uproject" "$@"
 elif [ "$PLATFORM" = "Mac" ]; then
-  ./Engine/Binaries/Mac/UnrealEditor.app/Contents/MacOS/UnrealEditor "$PROJECT_ROOT/$PROJECT_NAME.uproject"
+  ./Engine/Binaries/Mac/UnrealEditor.app/Contents/MacOS/UnrealEditor "$PROJECT_ROOT/$PROJECT_NAME.uproject" "$@"
 elif [ "$PLATFORM" = "Linux" ]; then
   # -norelativemousemode is a workaround for an issue where the mouse is extremely sensitive with Ubuntu remote desktop
   # https://forums.unrealengine.com/t/work-from-home-how-to-use-unreal-through-remote-desktop/141157
-  ./Engine/Binaries/Linux/UnrealEditor "$PROJECT_ROOT/$PROJECT_NAME.uproject" -norelativemousemode
+  ./Engine/Binaries/Linux/UnrealEditor "$PROJECT_ROOT/$PROJECT_NAME.uproject" -norelativemousemode "$@"
 else
   echo "Unsupported platform"
   exit 1

@@ -42,15 +42,15 @@ cd "$UNREAL_ENGINE_PATH"
 if [ "$HOST_PLATFORM" = "Win64" ]; then
   ./Engine/Build/BatchFiles/RunUAT.bat Turnkey -command=VerifySdk -platform=$TARGET_PLATFORM -UpdateIfNeeded -project="$PROJECT_ROOT/$PROJECT_NAME.uproject" BuildCookRun -nop4 -utf8output -nocompileeditor \
   -skipbuildeditor -cook -target=$PROJECT_NAME -unrealexe="UnrealEditor-Cmd.exe" -platform=$TARGET_PLATFORM -project="$PROJECT_ROOT/$PROJECT_NAME.uproject" -installed -stage -package \
-  -build -iostore -prereqs -stagingirectory="$PROJECT_ROOT/Packaged" -clientconfig=Development -ScriptDir="$PROJECT_ROOT/Plugins/Tempo/TempoROS/Scripts"
+  -build -iostore -prereqs -stagingirectory="$PROJECT_ROOT/Packaged" -clientconfig=Development -ScriptDir="$PROJECT_ROOT/Plugins/Tempo/TempoROS/Scripts" "$@"
 elif [ "$HOST_PLATFORM" = "Mac" ]; then
   ./Engine/Build/BatchFiles/RunUAT.sh Turnkey -command=VerifySdk -platform=$TARGET_PLATFORM -UpdateIfNeeded -project="$PROJECT_ROOT/$PROJECT_NAME.uproject" BuildCookRun -nop4 -utf8output -nocompileeditor \
   -skipbuildeditor -cook -target=$PROJECT_NAME -unrealexe="UnrealEditor-Cmd" -platform=$TARGET_PLATFORM -project="$PROJECT_ROOT/$PROJECT_NAME.uproject" -installed -stage -archive -package \
-  -build -iostore -prereqs -archivedirectory="$PROJECT_ROOT/Packaged" -clientconfig=Development -ScriptDir="$PROJECT_ROOT/Plugins/Tempo/TempoROS/Scripts"
+  -build -iostore -prereqs -archivedirectory="$PROJECT_ROOT/Packaged" -clientconfig=Development -ScriptDir="$PROJECT_ROOT/Plugins/Tempo/TempoROS/Scripts" "$@"
 elif [ "$HOST_PLATFORM" = "Linux" ]; then
   ./Engine/Build/BatchFiles/RunUAT.sh Turnkey -command=VerifySdk -platform=$TARGET_PLATFORM -UpdateIfNeeded -project="$PROJECT_ROOT/$PROJECT_NAME.uproject" BuildCookRun -nop4 -utf8output -nocompileeditor \
   -skipbuildeditor -cook -target=$PROJECT_NAME -unrealexe="UnrealEditor" -platform=$TARGET_PLATFORM -project="$PROJECT_ROOT/$PROJECT_NAME.uproject" -installed -stage -package \
-  -build -iostore -prereqs -stagingdirectory="$PROJECT_ROOT/Packaged" -clientconfig=Development -ScriptDir="$PROJECT_ROOT/Plugins/Tempo/TempoROS/Scripts"
+  -build -iostore -prereqs -stagingdirectory="$PROJECT_ROOT/Packaged" -clientconfig=Development -ScriptDir="$PROJECT_ROOT/Plugins/Tempo/TempoROS/Scripts" "$@"
 else
   echo "Unsupported platform"
   exit 1

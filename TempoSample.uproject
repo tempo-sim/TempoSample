@@ -18,13 +18,22 @@
 				"Editor"
 			]
 		},
-                {
-                        "Name": "TempoROS",
-                        "Enabled": false
-                },
-                {
-                        "Name": "TempoROSBridge",
-                        "Enabled": false
-                }
+		{
+			"Name": "TempoROS",
+			"Enabled": false
+		},
+		{
+			"Name": "TempoROSBridge",
+			"Enabled": false
+		},
+		{
+			"Name": "Fab",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"Mac",
+				"Linux"
+			]
+		}
 	]
 }

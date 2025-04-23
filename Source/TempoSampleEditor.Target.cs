@@ -9,20 +9,20 @@ public class TempoSampleEditorTarget : TargetRules
 	{
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V5;
-		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_4;
+		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
 		ExtraModuleNames.Add("TempoSample");
 
-                if (Platform == UnrealTargetPlatform.Win64)
-                {
-                        ToolChainName = "TempoVCToolChain";
-                }
-                else if (Platform == UnrealTargetPlatform.Mac)
-                {
-                        ToolChainName = "TempoMacToolChain";
-                }
-                else if (Platform == UnrealTargetPlatform.Linux)
-                {
-                        ToolChainName = "TempoLinuxToolChain";
-                }
+		if (Platform == UnrealTargetPlatform.Win64)
+		{
+			ToolChainName = "TempoVCToolChain";
+		}
+		else if (Platform == UnrealTargetPlatform.Mac)
+		{
+			ToolChainName = "TempoMacToolChain";
+		}
+		else if (Platform == UnrealTargetPlatform.Linux)
+		{
+			ToolChainName = "TempoLinuxToolChain";
+		}
 	}
 }

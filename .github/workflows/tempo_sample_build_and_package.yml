@@ -19,7 +19,7 @@ jobs:
     permissions:
       contents: read
       pull-requests: write
-    uses: tempo-sim/Tempo/.github/workflows/build_and_package.yml@main
+    uses: tempo-sim/Tempo/.github/workflows/build_and_package.yml@release
     strategy:
       matrix:
         platform: [ ubuntu-22.04 ]

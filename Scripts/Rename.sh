@@ -57,3 +57,16 @@ NEW_NAME_CAPS=$(echo "$NEW_NAME" | tr '[:lower:]' '[:upper:]')
 find . -type f -name "*.h" -print0 | xargs -0 sed "${sed_i[@]}" "s/${OLD_NAME_CAPS}_API/${NEW_NAME_CAPS}_API/g"
 find . -type f -name "*.h" -print0 | xargs -0 sed "${sed_i[@]}" "s/$OLD_NAME/$NEW_NAME/g"
 find . -type f -name "*.cpp" -print0 | xargs -0 sed "${sed_i[@]}" "s/$OLD_NAME/$NEW_NAME/g"
+
+REDIRECT_TEMPLATE=\
+'
+[CoreRedirects]
++ClassRedirects=(OldName="/Script/TempoSample.TempoSampleGameMode",NewName="/Script/__NEW_NAME__.__NEW_NAME__GameMode")'
+REDIRECT=${REDIRECT_TEMPLATE//__NEW_NAME__/$NEW_NAME}
+
+# Remove any existing redirects and add the new one
+TEMP_FILE=$(mktemp)
+sed '/\[CoreRedirects\]/,$d' "$PROJECT_ROOT/Config/DefaultEngine.ini" > "$TEMP_FILE"
+echo -e "$REDIRECT" >> "$TEMP_FILE"
+
+cp "$TEMP_FILE" "$PROJECT_ROOT/Config/DefaultEngine.ini"

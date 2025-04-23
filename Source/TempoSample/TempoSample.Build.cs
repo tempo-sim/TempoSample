@@ -2,7 +2,7 @@
 
 using UnrealBuildTool;
 
-public class TempoSample : ModuleRules
+public class TempoSample : TempoModuleRules
 {
 	public TempoSample(ReadOnlyTargetRules Target) : base(Target)
 	{

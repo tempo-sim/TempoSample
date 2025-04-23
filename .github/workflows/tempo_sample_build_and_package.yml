@@ -1,0 +1,31 @@
+# ======
+# Build and Package Workflow for the TempoSample project.
+# This workflow uses the generic Build and Package workflow in Tempo to build and package
+# the TempoSample project.
+# ======
+
+name: Build and Package the TempoSample Project
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build_and_package:
+    name: Build and Package TempoSample
+    permissions:
+      contents: read
+      pull-requests: write
+    uses: tempo-sim/Tempo/.github/workflows/build_and_package.yml@main
+    strategy:
+      matrix:
+        platform: [ ubuntu-22.04 ]
+        unreal_version: [ 5.4.4, 5.5.4 ]
+    with:
+      clean: false
+      platform: ${{ matrix.platform }}
+      unreal_version: ${{ matrix.unreal_version }}
+    secrets: inherit

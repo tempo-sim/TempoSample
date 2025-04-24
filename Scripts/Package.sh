@@ -7,4 +7,4 @@ PROJECT_ROOT=$(realpath "$SCRIPT_DIR/..")
 cd $PROJECT_ROOT
 
 # Simply call the Tempo Package script with the same arguments.
-./Plugins/Tempo/Scripts/Pacakge.sh "$@"
+./Plugins/Tempo/Scripts/Package.sh "$@"

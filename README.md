@@ -20,8 +20,13 @@ Follow the instructions from the [Getting Started](https://github.com/tempo-sim/
 > 
 > If you do forget, run a `git submodule update --init Plugins/Tempo` to fix it
 
+Refer to the [Compatibility](https://github.com/tempo-sim/Tempo/tree/release#compatibility), [Prerequisites](https://github.com/tempo-sim/Tempo/tree/release?tab=readme-ov-file#prerequisites), and [Environment Variables](https://github.com/tempo-sim/Tempo/tree/release?tab=readme-ov-file#environment-variables) sections from Tempo.
+
 ## Content
 This project includes some free ([Creative Commons License](https://creativecommons.org/licenses/by/4.0/)) content for demonstration, the default environment and robot dog. Most Tempo projects start by replacing that with domain-specific content.
+
+> [!Warning]
+> The robot dog uses the [Locomotor](https://dev.epicgames.com/community/learning/tutorials/EkxO/unreal-engine-procedural-animation-with-a-locomotor) plugin, which was introduced in 5.6. You will have to disable that plugin (and the robot dog won't work) on 5.4 or 5.5.
 
 ## Code
 This project contains very little code. For an example of how you can write your own RPCs and expose them to Python using Tempo, check out the [Greeter](https://github.com/tempo-sim/Greeter/) example plugin. You can follow the same patterns in project code.

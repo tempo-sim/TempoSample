@@ -25,10 +25,6 @@
 		{
 			"Name": "TempoROSBridge",
 			"Enabled": false
-		},
-		{
-			"Name": "Locomotor",
-			"Enabled": true
 		}
 	]
 }

@@ -1,1 +1,1 @@
-The content in this folder was adapted from Christophe Yamahata's [Robot dog Unitree Go2](https://www.fab.com/listings/ec13616a-bc74-40b8-81df-a8e6c62d3e6f?utm_campaign=pr*Fab_sp*Fab.com_an*Moonrock_ct*Bing_cn*Fab.com_ta*Generic_pl*LinkClicks_co*USBuyer&utm_content=555197693&utm_medium=PaidSearch&utm_source=bing&utm_term=purchase+3d+models)
+The content in this folder was adapted from Christophe Yamahata's [Robot dog Unitree Go2](https://www.fab.com/listings/ec13616a-bc74-40b8-81df-a8e6c62d3e6f)

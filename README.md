@@ -23,13 +23,21 @@ Follow the instructions from the [Getting Started](https://github.com/tempo-sim/
 Refer to the [Compatibility](https://github.com/tempo-sim/Tempo/tree/release#compatibility), [Prerequisites](https://github.com/tempo-sim/Tempo/tree/release?tab=readme-ov-file#prerequisites), and [Environment Variables](https://github.com/tempo-sim/Tempo/tree/release?tab=readme-ov-file#environment-variables) sections from Tempo.
 
 ## Content
-This project includes some free ([Creative Commons License](https://creativecommons.org/licenses/by/4.0/)) content for demonstration, the default environment and robot dog. Most Tempo projects start by replacing that with domain-specific content.
+This project includes some free ([Creative Commons License](https://creativecommons.org/licenses/by/4.0/)) content for demonstration, the default environment, robot dog, and street sweeper. Most Tempo projects start by replacing that with domain-specific content.
 
-> [!Warning]
-> The robot dog uses the [Locomotor](https://dev.epicgames.com/community/learning/tutorials/EkxO/unreal-engine-procedural-animation-with-a-locomotor) plugin, which was introduced in 5.6. If you are using 5.6 you should enable that plugin. On older Unreal versions the dog won't animate.
+The robot dog uses the [Locomotor](https://dev.epicgames.com/community/learning/tutorials/EkxO/unreal-engine-procedural-animation-with-a-locomotor) plugin, which was introduced in 5.6. If you are using 5.6 you can use it by:
+- Enabling the Locomotor plugin for you project
+- Add one `Content/UnitreeGo2/Blueprints/BP_Unitree_Go2` to your level, replacing the street sweeper
+- Change the `RobotClass` field of your game mode to `BP_Unitree_Go2`
 
 ## Code
 This project contains very little code. For an example of how you can write your own RPCs and expose them to Python using Tempo, check out the [Greeter](https://github.com/tempo-sim/Greeter/) example plugin. You can follow the same patterns in project code.
+
+## Python API
+To try out the Tempo Python API (after running `Setup.sh` and `Scripts/Build.sh`):
+- Run 'source ./TempoEnv/bin/activate' to activate the included virtual environment
+- `pip install jupyter` and Run 'jupyter lab'
+- Open Content/Python/ExampleClients/TempoSimExamples.ipynb
 
 ## Convenience Scripts
 - Run `Scripts/Clean.sh` (from the project root) to remove previous build artifacts.

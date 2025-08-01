@@ -1,6 +1,6 @@
 # TempoSample
 
-<img width="1914" height="975" alt="Screenshot 2025-07-30 at 9 24 15 AM" src="https://github.com/user-attachments/assets/f8422d2a-37d2-4e70-a418-f72537fd8d80" />
+![overlay_sweeper_cropped](https://github.com/user-attachments/assets/a1433caf-60fd-4db0-b6ab-ebdd0d3e2dc5)
 
 A sample Unreal project intended to be a reference for recommended settings and project organization when using [Tempo](https://github.com/tempo-sim/Tempo).
 

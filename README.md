@@ -23,12 +23,7 @@ Follow the instructions from the [Getting Started](https://github.com/tempo-sim/
 Refer to the [Compatibility](https://github.com/tempo-sim/Tempo/tree/release#compatibility), [Prerequisites](https://github.com/tempo-sim/Tempo/tree/release?tab=readme-ov-file#prerequisites), and [Environment Variables](https://github.com/tempo-sim/Tempo/tree/release?tab=readme-ov-file#environment-variables) sections from Tempo.
 
 ## Content
-This project includes some free ([Creative Commons License](https://creativecommons.org/licenses/by/4.0/)) content for demonstration, the default environment, robot dog, and street sweeper. Most Tempo projects start by replacing that with domain-specific content.
-
-The robot dog uses the [Locomotor](https://dev.epicgames.com/community/learning/tutorials/EkxO/unreal-engine-procedural-animation-with-a-locomotor) plugin, which was introduced in 5.6. If you are using 5.6 you can use it by:
-- Enabling the Locomotor plugin for you project
-- Add one `Content/UnitreeGo2/Blueprints/BP_Unitree_Go2` to your level, replacing the street sweeper
-- Change the `RobotClass` field of your game mode to `BP_Unitree_Go2`
+This project includes some free ([Creative Commons License](https://creativecommons.org/licenses/by/4.0/)) content for demonstration, the default environment and street sweeper. Most Tempo projects start by replacing that with domain-specific content.
 
 ## Code
 This project contains very little code. For an example of how you can write your own RPCs and expose them to Python using Tempo, check out the [Greeter](https://github.com/tempo-sim/Greeter/) example plugin. You can follow the same patterns in project code.

@@ -26,7 +26,7 @@ Refer to the [Compatibility](https://github.com/tempo-sim/Tempo/tree/release#com
 This project includes some free ([Creative Commons License](https://creativecommons.org/licenses/by/4.0/)) content for demonstration, the default environment and street sweeper. Most Tempo projects start by replacing that with domain-specific content.
 
 ## Code
-This project contains very little code. For an example of how you can write your own RPCs and expose them to Python using Tempo, check out the [Greeter](https://github.com/tempo-sim/Greeter/) example plugin. You can follow the same patterns in project code.
+This project contains very little code. For an example of how you can write your own RPCs and expose them to Python using Tempo, check out the [Greeter](https://github.com/tempo-sim/Greeter/) example plugin. This plugin is included in the TempoSample project, but you can turn it off or remove it once you get the idea. You can follow the same patterns in project code.
 
 ## Python API
 To try out the Tempo Python API (after running `Plugins/Tempo/Setup.sh` and `Scripts/Build.sh`):

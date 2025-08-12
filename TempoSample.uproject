@@ -25,6 +25,10 @@
 		{
 			"Name": "TempoROSBridge",
 			"Enabled": false
+		},
+		{
+			"Name": "Greeter",
+			"Enabled": true
 		}
 	]
 }

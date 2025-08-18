@@ -18,7 +18,7 @@ Follow the instructions from the [Getting Started](https://github.com/tempo-sim/
 > Don't forget to recurse submodules (so you get the Tempo plugins) when cloning:
 `git clone <your_repo> --recurse-submodules`
 > 
-> If you do forget, run a `git submodule update --init Plugins/Tempo` to fix it
+> If you do forget, run a `git submodule update --init --recursive Plugins/Tempo` to fix it
 
 Refer to the [Compatibility](https://github.com/tempo-sim/Tempo/tree/release#compatibility), [Prerequisites](https://github.com/tempo-sim/Tempo/tree/release?tab=readme-ov-file#prerequisites), and [Environment Variables](https://github.com/tempo-sim/Tempo/tree/release?tab=readme-ov-file#environment-variables) sections from Tempo.
 
@@ -26,7 +26,10 @@ Refer to the [Compatibility](https://github.com/tempo-sim/Tempo/tree/release#com
 This project includes some free ([Creative Commons License](https://creativecommons.org/licenses/by/4.0/)) content for demonstration, the default environment and street sweeper. Most Tempo projects start by replacing that with domain-specific content.
 
 ## Code
-This project contains very little code. For an example of how you can write your own RPCs and expose them to Python using Tempo, check out the [Greeter](https://github.com/tempo-sim/Greeter/) example plugin. This plugin is included in the TempoSample project, but you can turn it off (by editing the uproject file) or remove it once you get the idea. You can follow the same patterns to add services and RPCs to your own project code.
+This project contains very little code. For an example of how you can write your own RPCs and expose them to Python using Tempo, check out the [Greeter](https://github.com/tempo-sim/Greeter/) example plugin. This plugin is included in the TempoSample project, but you can disable them (by editing the uproject file) or remove it once you get the idea. You can follow the same patterns to add services and RPCs to your own project code.
+
+## TempoROS
+[TempoROS](https://github.com/tempo-sim/TempoROS) is a standalone plugin, developed by the same authors, included in `Tempo` as a submodule. The `TempoROS` and `TempoROSBridge` plugins (the latter of which translates and forwards Tempo messages to and from ROS) are disabled by default in the `TempoSample` project. If you use ROS, enable them by by editing the uproject file.
 
 ## Python API
 To try out the Tempo Python API (after running `Plugins/Tempo/Setup.sh` and `Scripts/Build.sh`):

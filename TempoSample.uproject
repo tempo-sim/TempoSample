@@ -20,11 +20,11 @@
 		},
 		{
 			"Name": "TempoROS",
-			"Enabled": false
+			"Enabled": true
 		},
 		{
 			"Name": "TempoROSBridge",
-			"Enabled": false
+			"Enabled": true
 		},
 		{
 			"Name": "Greeter",

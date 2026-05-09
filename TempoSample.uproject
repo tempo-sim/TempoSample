@@ -28,7 +28,7 @@
 		},
 		{
 			"Name": "Greeter",
-			"Enabled": true
+			"Enabled": false
 		}
 	]
 }

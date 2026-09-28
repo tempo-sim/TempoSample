@@ -22,6 +22,9 @@ Follow the instructions from the [Getting Started](https://github.com/tempo-sim/
 
 Refer to the [Compatibility](https://github.com/tempo-sim/Tempo/tree/release#compatibility), [Prerequisites](https://github.com/tempo-sim/Tempo/tree/release?tab=readme-ov-file#prerequisites), and [Environment Variables](https://github.com/tempo-sim/Tempo/tree/release?tab=readme-ov-file#environment-variables) sections from Tempo.
 
+> [!Warning]
+> Although Tempo supports UE 5.7 and 5.8, this project only supports 5.8.
+
 ## Content
 This project includes some free ([Creative Commons License](https://creativecommons.org/licenses/by/4.0/)) content for demonstration, the default environment and street sweeper. Most Tempo projects start by replacing that with domain-specific content.
 

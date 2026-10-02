@@ -23,7 +23,7 @@ jobs:
     strategy:
       matrix:
         platform: [ ubuntu-24.04 ]
-        unreal_version: [ 5.8 ]
+        unreal_version: [ 5.7, 5.8 ]
     with:
       clean: false
       platform: ${{ matrix.platform }}
